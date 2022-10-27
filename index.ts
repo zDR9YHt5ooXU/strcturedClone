@@ -15,9 +15,10 @@ class Person {
   [SOURCES] = new Source();
 }
 
+console.log('Cloning a source entry');
 const clonedPerson = structuredClone(new Person());
-
 clonedPerson[SOURCES].greet();
 
+console.log('Cloning a source');
 const clonedSource = structuredClone(new Source());
 clonedSource.greet();
