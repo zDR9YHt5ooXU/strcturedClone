@@ -18,3 +18,6 @@ class Person {
 const clonedPerson = structuredClone(new Person());
 
 clonedPerson[SOURCES].greet();
+
+const clonedSource = structuredClone(new Source());
+clonedSource.greet();
